@@ -1,0 +1,172 @@
+<!Doctype html>
+<html>
+<head>
+
+    <meta name="viewport" content="with=device=width, initial-scale=1.0">
+    <Title> Group One Website</Title>
+   
+<style>
+body {
+  background-color: #ded2fa;
+ 
+}
+
+    nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background: #BEADFA;
+    border-bottom: 0px solid #fff;
+    z-index: 5;
+    font-family: tahoma;
+}
+nav .logo {
+    padding: 2px 20px;
+    height: 80px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    z-index: 2;
+    
+}
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul a {
+    line-height: 15px;
+    color: white;
+    padding: 11px 23px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul a:hover {
+    background: rgba(0,0,0,0.7);
+    border-radius: 7px;
+}
+
+h1 {
+    margin-top: 90px;
+    font-family: tahoma;
+    font-weight: bold;
+    text-align: center;
+}
+
+.accordion {
+  background-color: #BEADFA;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border-radius: 10px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  text-decoration: #F5E6E8;
+  font-family: Tahoma;
+  font-weight: 700;
+
+}
+
+.active, .accordion:hover {
+  background-color: black;
+  background: #BEADFA;
+
+
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #67729D;
+  overflow: hidden;
+  width: 47.3%;
+  font-family: tAHOMA;
+  text-align: justify;
+  left: 20px;
+  color:white;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.you {
+  margin-left: 720px;
+    height: 600px;
+    bottom: 0px;
+    top: 150px;
+    position: absolute;
+    width: 550px;
+}
+
+</style>    
+</head>
+<body>   
+
+ <img src="foru.jpg" class=you>
+  
+  
+    <nav>
+        <div class="logo">Group 1</div>
+  <ul>
+    <a href="HELLO.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Course.html">Course</a>
+    <a href="PromotionalPlan.html">Promotional Plan</a>
+    <a href="Contacts.html">Contacts</a>
+    
+  </ul></nav>
+
+  
+
+  <h1>Digital Health Debate: Millennials and Generation Z </h1>
+   
+<button class="accordion">Why are we going to talk about the negative health aspects of social media?</button> 
+<div class="panel">
+  <p>The reason for discussing the bad health effects of social media is that it is linked to a variety of mental health issues, and to further enlighten people's pre-existing awareness about it. Social media may reinforce the brain's reward system and produce dopamine, a "feel-good chemical" associated with pleasurable activities. Excessive social media use, on the other hand, can lead to feelings of isolation, loneliness, difficulties sleeping, physical health issues, harassment, excessive expectations, and distraction.</p>
+</div>
+
+
+<button class="accordion">How is this relevant in our society today?</button>
+<div class="panel">
+  <p> Social media has evolved into an essential part of modern life, allowing us to easily communicate with others as well, meet other individuals, and share information. However, several harmful social media impacts have been identified. Some of the negative effects of social media include online harassment, the dissemination of incorrect information, addiction, a decline in face-to-face connection, low self-esteem, social isolation, division, negativity, online stalking as well as assault, a decrease in privacy, comparison, and envy.</p>
+</div>
+
+<button class="accordion">how is this beneficial to generations before and after us?</button>
+<div class="panel">
+  <p> It provides insight into the difficulties both old and new generations experience as a result of excessive social media use. This knowledge can enable them support and assist younger generations as they navigate the online world. It serves as a cautionary tale for the generation after Gen Z, emphasizing the potential downsides of excessive social media use and the importance of maintaining a healthy balance.</p>
+</div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+
+
+  </script>
+
+</body>
+</html>
